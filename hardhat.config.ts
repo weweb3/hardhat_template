@@ -1,10 +1,10 @@
+import dotenv from 'dotenv'
+dotenv.config()
+
 import { HardhatUserConfig } from 'hardhat/config'
 import '@typechain/hardhat'
 import '@nomiclabs/hardhat-waffle'
 import '@nomiclabs/hardhat-ethers'
-
-import dotenv from 'dotenv'
-dotenv.config()
 
 const config: HardhatUserConfig = {
   defaultNetwork: 'rinkeby',
