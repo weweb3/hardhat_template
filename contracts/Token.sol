@@ -1,5 +1,6 @@
-//SPDX-License-Identifier: Unlicense
-pragma solidity >=0.4.22 <0.9.0;
+// contracts/NFT.sol
+// SPDX-License-Identifier: MIT OR Apache-2.0
+pragma solidity ^0.8.4;
 
 import 'hardhat/console.sol';
 

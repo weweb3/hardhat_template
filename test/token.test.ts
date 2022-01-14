@@ -1,6 +1,6 @@
 import { ethers } from 'hardhat'
 import { expect } from 'chai'
-import { Token, Token__factory } from '../contracts/types'
+import { Token, Token__factory } from '../@types'
 import { SignerWithAddress } from '@nomiclabs/hardhat-ethers/signers'
 
 describe('Token Contract', () => {
