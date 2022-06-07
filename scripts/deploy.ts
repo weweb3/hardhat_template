@@ -1,5 +1,5 @@
 import { ethers } from 'hardhat'
-import type { Contract } from '../@types'
+import type { SimpleContract } from '../@types'
 
 async function main() {
   // ---- Deployer Account  -----
@@ -9,11 +9,11 @@ async function main() {
   const balance = await deployer.getBalance()
   console.log('Account balance: ', balance.toString())
 
-  // ----- Deploy Token Contract -----
-  const _Contract = await ethers.getContractFactory('Contract')
-  const contract = (await _Contract.deploy()) as Contract
+  // ----- Deploy Token SimpleContract -----
+  const _SimpleContract = await ethers.getContractFactory('SimpleContract')
+  const contract = (await _SimpleContract.deploy()) as SimpleContract
 
-  console.log('Contract deployed at:', contract.address)
+  console.log('SimpleContract deployed at:', contract.address)
 }
 
 main()
