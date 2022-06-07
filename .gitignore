@@ -18,6 +18,8 @@ package-lock.json
 yarn-lock.json
 .yarn-debug.log*
 .yarn-error.log*
+yarn.lock
+.yarn
 pnpm-lock.yaml
 .pnpm-debug.log
 .pnpm-error.log*
