@@ -1,5 +1,5 @@
 import { ethers } from 'hardhat'
-import type { Token, NFTFactory } from '../@types'
+import type { Token } from '../@types'
 
 async function main() {
   // ---- Deployer Account  -----
@@ -14,12 +14,6 @@ async function main() {
   const token = (await _Token.deploy()) as Token
 
   console.log('Token deployed at:', token.address)
-
-  // ----- Deploy NFT Contract -----
-  const _NFTFactiry = await ethers.getContractFactory('NFTFactory')
-  const nftFactory = (await _NFTFactiry.deploy()) as NFTFactory
-
-  console.log('NFTFactory deployed at:', nftFactory.address)
 }
 
 main()
