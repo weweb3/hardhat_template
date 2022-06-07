@@ -1,5 +1,5 @@
 import { ethers } from 'hardhat'
-import type { Token, NFTFactory } from '../@types'
+import type { NFTFactory } from '../@types'
 
 async function main() {
   // ---- Deployer Account  -----
