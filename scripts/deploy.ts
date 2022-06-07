@@ -9,12 +9,6 @@ async function main() {
   const balance = await deployer.getBalance()
   console.log('Account balance: ', balance.toString())
 
-  // ----- Deploy Token Contract -----
-  const _Token = await ethers.getContractFactory('Token')
-  const token = (await _Token.deploy()) as Token
-
-  console.log('Token deployed at:', token.address)
-
   // ----- Deploy NFT Contract -----
   const _NFTFactiry = await ethers.getContractFactory('NFTFactory')
   const nftFactory = (await _NFTFactiry.deploy()) as NFTFactory
